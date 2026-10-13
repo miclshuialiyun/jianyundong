@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 — 简·运动</title>
+<style>
+  :root{
+    --brand:#0F6E57;
+    --brand-dark:#063D2F;
+    --ink:#1d1d1f;
+    --muted:#6b7280;
+    --line:#e5e7eb;
+    --bg:#ffffff;
+    --soft:#f5f8f7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    color:var(--ink);
+    line-height:1.75;
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+  }
+  header{
+    background:linear-gradient(160deg,#17896A 0%,var(--brand) 45%,var(--brand-dark) 100%);
+    color:#fff;
+    padding:40px 20px 34px;
+    text-align:center;
+  }
+  header .logo{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:22px;font-weight:700;letter-spacing:.5px;
+  }
+  header .logo .dot{
+    width:12px;height:12px;border-radius:50%;background:#fff;
+    box-shadow:0 0 0 4px rgba(255,255,255,.25);
+  }
+  header h1{font-size:30px;margin-top:14px;font-weight:800;}
+  header p{opacity:.9;margin-top:8px;font-size:14px;}
+  nav{
+    background:var(--soft);border-bottom:1px solid var(--line);
+    padding:12px 20px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;
+    position:sticky;top:0;z-index:10;
+  }
+  nav a{
+    text-decoration:none;color:var(--brand);font-weight:600;font-size:14px;
+    padding:6px 14px;border-radius:999px;border:1px solid transparent;
+  }
+  nav a:hover{background:#fff;border-color:var(--line);}
+  nav a.active{background:var(--brand);color:#fff;}
+  main{max-width:820px;margin:0 auto;padding:36px 20px 60px;}
+  .updated{
+    display:inline-block;background:var(--soft);color:var(--muted);
+    font-size:13px;padding:4px 12px;border-radius:999px;margin-bottom:24px;
+  }
+  h2{
+    font-size:20px;margin:34px 0 12px;color:var(--brand-dark);
+    padding-left:12px;border-left:4px solid var(--brand);
+  }
+  h3{font-size:16px;margin:20px 0 8px;color:var(--ink);}
+  p,li{font-size:15px;color:#374151;}
+  ul,ol{padding-left:22px;margin:8px 0 8px;}
+  li{margin:6px 0;}
+  strong{color:var(--ink);}
+  .callout{
+    background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;
+    border-radius:12px;padding:14px 16px;margin:18px 0;font-size:14px;
+  }
+  .callout.green{background:var(--soft);border-color:#bce3d6;color:var(--brand-dark);}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px;}
+  th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;}
+  th{background:var(--soft);color:var(--brand-dark);}
+  a.inline{color:var(--brand);}
+  footer{
+    background:var(--brand-dark);color:#cfe7df;
+    text-align:center;padding:26px 20px;font-size:13px;line-height:1.9;
+  }
+  footer a{color:#fff;text-decoration:underline;}
+  .contact{
+    background:var(--soft);border:1px solid var(--line);border-radius:12px;
+    padding:16px 18px;margin:18px 0;font-size:15px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><span class="dot"></span>简·运动</div>
+  <h1>隐私政策</h1>
+  <p>本地优先的跑步训练负荷记录工具</p>
+</header>
+
+<nav>
+  <a href="index.html">产品主页</a>
+  <a href="support.html">技术支持</a>
+  <a href="privacy.html" class="active">隐私政策</a>
+  <a href="terms.html">使用条款</a>
+</nav>
+
+<main>
+  <span class="updated">生效日期：2026 年 10 月 13 日　|　最后更新：2026 年 10 月 13 日</span>
+
+  <p>欢迎使用<strong>简·运动 — 跑步训练负荷记录</strong>（以下简称「本应用」，软件标识 Bundle ID：<code>cn.jianyundong.app</code>）。我们高度重视您的隐私与数据安全。本政策说明本应用如何处理您的个人信息，请您在使用的，请仔细阅读。</p>
+
+  <div class="callout green">
+    <strong>核心原则：</strong>本应用采用「本地优先」设计，您的健康与健身数据默认<strong>仅存储在您自己的设备（iPhone / Apple Watch）上，不会上传至任何服务器</strong>。我们不向任何第三方出售、交换或共享您的个人数据。
+  </div>
+
+  <h2>一、我们收集的数据</h2>
+
+  <h3>1.1 健康与健身数据（通过 Apple 健康授权获取）</h3>
+  <p>为计算训练负荷，本应用通过系统的「健康」App（HealthKit）在您明确授权后读取以下数据：</p>
+  <ul>
+    <li>心率（静息、运动中的实时与区间分布）</li>
+    <li>跑步距离、配速、步频、运动时长</li>
+    <li>GPS 轨迹与海拔（用于记录路线与里程）</li>
+    <li>锻炼记录（ workout 汇总数据）</li>
+  </ul>
+  <p>这些数据由 Apple 健康数据库提供，本应用<strong>不主动读取</strong>通讯录、相册、短信、麦克风、相机等与运动无关的个人信息。</p>
+
+  <h3>1.1.1 关于轨迹地图与分享卡片</h3>
+  <ul>
+    <li>GPS 轨迹<strong>仅在本机渲染与存储</strong>，用于在应用内绘制实时地图与历史路线，不会随任何分享操作上传。</li>
+    <li>分享卡片中的轨迹为<strong>缩略示意图</strong>（相对坐标绘制，不含经纬度数值），卡片只包含距离、时长、配速等统计数据，<strong>不包含精确位置信息</strong>；分享图片本身不含位置元数据（EXIF GPS）。</li>
+    <li>「水印相机」拍摄的照片仅在本机与您选择的数据叠加合成，合成后的图片由您自行决定是否分享，本应用不接触、不留存。</li>
+  </ul>
+
+  <h3>1.2 订阅与功能状态</h3>
+  <ul>
+    <li>订阅状态（是否会员、到期日）由 Apple 在您购买后返回给本应用，用于解锁对应功能。</li>
+    <li>支付过程由 Apple 完成，<strong>本应用及开发者不接收、不存储任何银行卡号、支付账户等敏感支付信息</strong>。</li>
+  </ul>
+
+  <h3>1.4 运动传感器数据（仅跳绳功能）</h3>
+  <p>使用跳绳功能时，本应用会在<strong>该次跳绳过程中</strong>读取设备的加速度与角速度（陀螺仪）数据，用于识别落地冲击与手腕转动、自动计算跳绳次数。处理方式如下：</p>
+  <ul>
+    <li>原始采样<strong>只在内存中即时计算，不落盘、不保存、不上传</strong>，仅保留计算得出的次数、频率、连续次数与绊绳次数；</li>
+    <li>退出跳绳界面后即停止读取；手机端切到后台会自动暂停；</li>
+    <li>跳绳次数为<strong>估算值</strong>，您可在结束页随时手动修正。</li>
+  </ul>
+
+  <h3>1.5 我们<strong>不</strong>主动收集的个人信息</h3>
+  <p>本应用不要求注册账号，也不主动收集您的姓名、手机号、电子邮箱、精确设备标识符或位置（除运动记录所必需的 GPS 轨迹，且该轨迹仅存于本机）。仅在应用发生崩溃时，系统可能生成必要的诊断日志，其中不含您的运动内容本身。</p>
+
+  <h2>二、数据存储位置</h2>
+  <ul>
+    <li>上述健康与健身数据<strong>默认完全存储在您的设备本地</strong>（iPhone 与配对的 Apple Watch），不经由网络传输到任何服务器。</li>
+    <li>您可在应用内将记录<strong>导出为本地文件</strong>（CSV / JSON），该文件保存在您指定的位置，由您自行管控。</li>
+  </ul>
+
+  <h2>三、数据如何使用</h2>
+  <p>我们仅在设备本地使用上述数据，用于：</p>
+  <ul>
+    <li>计算并展示训练负荷指标（CTL 长期负荷、ATL 短期负荷、TSB 状态，以及 TRIMP 负荷值）；</li>
+    <li>生成训练计划建议、节拍器节奏与每公里语音播报；</li>
+    <li>在应用内以图表形式呈现趋势，帮助您了解疲劳与体能变化。</li>
+  </ul>
+
+  <h2>四、数据共享与披露</h2>
+  <div class="callout">
+    <strong>关于健康数据的特别声明（Apple 平台要求）：</strong>通过 HealthKit API 获取的健康与健身数据，<strong>绝不会用于广告、营销，也绝不会向任何第三方披露</strong>。本应用不含任何广告、不嵌入广告 SDK、不向广告网络发送数据。
+  </div>
+  <ul>
+    <li>除您主动导出文件外，我们<strong>不与任何公司、组织或个人共享</strong>您的个人数据。</li>
+    <li>我们不会出售您的个人信息，也不会参与任何数据经纪活动。</li>
+    <li>仅在法律法规要求、或为保护本应用与用户安全所必需的极少数情形下，我们才可能依法配合主管部门。</li>
+  </ul>
+
+  <h2>五、数据导出与删除</h2>
+  <table>
+    <tr><th>操作</th><th>方式</th><th>费用</th></tr>
+    <tr><td>导出全部运动记录</td><td>应用内「设置 → 数据导出」，支持 CSV、JSON 与 GPX</td><td>免费</td></tr>
+    <tr><td>删除本地数据</td><td>直接卸载本应用，或「设置 → 清除数据」</td><td>免费</td></tr>
+    <tr><td>删除账户相关数据</td><td>邮件联系隐私团队，核实后 30 日内处理</td><td>免费</td></tr>
+  </table>
+  <p>由于本应用不留存服务器副本，卸载后即可从设备中彻底移除绝大部分本地数据。如您希望我们协助确认或删除残留的诊断信息，可通过下方邮箱联系。</p>
+
+  <h2>六、儿童隐私</h2>
+  <p>本应用不专门面向 13 周岁以下儿童，也不会故意收集儿童的个人信息。若您是监护人并发现儿童误使用了本应用，可通过下方联系方式要求我们协助处理。</p>
+
+  <h2>七、数据安全</h2>
+  <ul>
+    <li>运动数据保存在设备本地的安全存储区域，受系统级加密保护。</li>
+    <li>本应用不建立用户账号体系，因此不存在账号密码泄露风险。</li>
+    <li>我们持续关注 Apple 平台的安全更新，并随版本升级修复潜在问题。</li>
+  </ul>
+
+  <h2>八、您的权利</h2>
+  <p>根据适用的个人信息保护法律，您对个人数据享有以下权利：访问、更正、导出、删除、以及拒绝非必要处理。由于本应用以本地存储为主，您可直接在设备与应用内行使上述权利；如需进一步协助，请邮件联系我们。</p>
+
+  <h2>九、本政策的更新</h2>
+  <p>我们可能不时更新本隐私政策。任何实质性变更都会在本页面发布更新版本并标注生效日期。建议您定期回访本页了解最新内容。</p>
+
+  <h2>十、联系我们</h2>
+  <div class="contact">
+    如对本隐私政策或您的数据有任何疑问、请求或投诉，请通过以下方式联系我们的隐私团队：<br>
+    邮箱：<a class="inline" href="mailto:miclshui@gmail.com">miclshui@gmail.com</a><br>
+    我们会在合理时间内（通常 1–2 个工作日）予以回复。
+  </div>
+
+  <p style="font-size:13px;color:var(--muted);margin-top:24px;">本政策依据《中华人民共和国个人信息保护法》及 Apple App Store 审核指南相关隐私要求制定。</p>
+</main>
+
+<footer>
+  简·运动 — 跑步训练负荷记录<br>
+  <a href="index.html">产品主页</a> · <a href="support.html">技术支持</a> · <a href="privacy.html">隐私政策</a> · <a href="terms.html">使用条款</a><br>
+  © 2026 简·运动　保留所有权利<br>
+  <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤ICP备2025370411号</a>
+</footer>
+</body>
+</html>

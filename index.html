@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>简·运动 — 跑步训练负荷记录</title>
+<style>
+  :root{
+    --brand:#0F6E57;
+    --brand-dark:#063D2F;
+    --ink:#1d1d1f;
+    --muted:#6b7280;
+    --line:#e5e7eb;
+    --bg:#ffffff;
+    --soft:#f5f8f7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    color:var(--ink);line-height:1.75;background:var(--bg);-webkit-font-smoothing:antialiased;
+  }
+  header{
+    background:linear-gradient(160deg,#17896A 0%,var(--brand) 45%,var(--brand-dark) 100%);
+    color:#fff;padding:56px 20px 48px;text-align:center;
+  }
+  header .logo{display:inline-flex;align-items:center;gap:12px;font-size:26px;font-weight:800;letter-spacing:.5px;}
+  header .logo .dot{width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 0 5px rgba(255,255,255,.22);}
+  header h1{font-size:38px;margin-top:18px;font-weight:900;letter-spacing:1px;}
+  header p.tag{opacity:.92;margin-top:10px;font-size:17px;}
+  header p.sub{opacity:.78;margin-top:6px;font-size:14px;}
+  nav{
+    background:var(--soft);border-bottom:1px solid var(--line);
+    padding:12px 20px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;
+    position:sticky;top:0;z-index:10;
+  }
+  nav a{text-decoration:none;color:var(--brand);font-weight:600;font-size:14px;padding:6px 14px;border-radius:999px;border:1px solid transparent;}
+  nav a:hover{background:#fff;border-color:var(--line);}
+  nav a.active{background:var(--brand);color:#fff;}
+  main{max-width:920px;margin:0 auto;padding:44px 20px 60px;}
+  section{margin-bottom:46px;}
+  h2{font-size:24px;margin:0 0 18px;color:var(--brand-dark);text-align:center;}
+  .lead{text-align:center;color:var(--muted);max-width:640px;margin:0 auto 30px;font-size:15px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
+  .card{
+    background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:20px;
+  }
+  .card .ico{font-size:26px;}
+  .card h3{font-size:17px;margin:8px 0 6px;color:var(--brand-dark);}
+  .card p{font-size:14px;color:#4b5563;}
+  .principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+  .principle{
+    border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center;
+    background:#fff;
+  }
+  .principle .num{display:inline-flex;width:38px;height:38px;border-radius:50%;background:var(--brand);color:#fff;align-items:center;justify-content:center;font-weight:800;margin-bottom:10px;}
+  .principle h3{font-size:16px;color:var(--brand-dark);margin-bottom:6px;}
+  .principle p{font-size:14px;color:#4b5563;}
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;}
+  .plan{border:1px solid var(--line);border-radius:16px;padding:20px;text-align:center;background:#fff;}
+  .plan.feature{border-color:var(--brand);box-shadow:0 6px 20px rgba(15,110,87,.12);}
+  .plan .name{font-weight:700;color:var(--brand-dark);}
+  .plan .price{font-size:28px;font-weight:900;color:var(--brand);margin:8px 0 2px;}
+  .plan .price small{font-size:13px;font-weight:600;color:var(--muted);}
+  .plan .note{font-size:13px;color:var(--muted);}
+  .cta{
+    display:inline-block;background:var(--brand);color:#fff;text-decoration:none;
+    font-weight:700;padding:14px 30px;border-radius:999px;font-size:16px;
+  }
+  .cta-wrap{text-align:center;margin-top:18px;}
+  .note-line{text-align:center;color:var(--muted);font-size:13px;margin-top:12px;}
+  footer{background:var(--brand-dark);color:#cfe7df;text-align:center;padding:28px 20px;font-size:13px;line-height:1.9;}
+  footer a{color:#fff;text-decoration:underline;}
+  footer .links{margin:8px 0;}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><span class="dot"></span>简·运动</div>
+  <h1>跑步训练负荷记录</h1>
+  <p class="tag">别只看跑了多远，看看身体到底练得值不值</p>
+  <p class="sub">零广告 · 数据可全量导出 · 付费透明</p>
+</header>
+
+<nav>
+  <a href="index.html" class="active">产品主页</a>
+  <a href="support.html">技术支持</a>
+  <a href="privacy.html">隐私政策</a>
+  <a href="terms.html">使用条款</a>
+</nav>
+
+<main>
+  <section>
+    <p class="lead">简·运动是一款本地优先的跑步训练辅助工具。它把每一次跑步转化成可被理解的训练负荷，帮你在「该冲一次」和「该好好休息」之间做出判断，而不是凭感觉硬撑。</p>
+  </section>
+
+  <section>
+    <h2>核心功能</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="ico">🏃</div>
+        <h3>跑步记录</h3>
+        <p>记录 GPS 轨迹、距离、配速、时长与心率，iPhone 与 Apple Watch 均可使用。</p>
+      </div>
+      <div class="card">
+        <div class="ico">📈</div>
+        <h3>训练负荷分析</h3>
+        <p>用 CTL / ATL / TSB 三条曲线呈现长期体能、短期疲劳与当前状态，趋势一目了然。</p>
+      </div>
+      <div class="card">
+        <div class="ico">🗺️</div>
+        <h3>训练计划</h3>
+        <p>提供不同目标的计划模板，跟着计划跑，循序渐进，避免无谓的过度训练。</p>
+      </div>
+      <div class="card">
+        <div class="ico">🎵</div>
+        <h3>节拍器</h3>
+        <p>跟随设定步频打拍，帮助建立稳定节奏；会员可不限次数使用完整节拍功能。</p>
+      </div>
+      <div class="card">
+        <div class="ico">🔊</div>
+        <h3>语音播报</h3>
+        <p>每公里播报配速、心率与里程，无需低头看表，专注跑步本身。</p>
+      </div>
+      <div class="card">
+        <div class="ico">🪢</div>
+        <h3>跳绳计数</h3>
+        <p>室内也能练：传感器自动数跳了多少次，支持自由跳 / 定时 / 计次三种模式，结束可手动修正。</p>
+      </div>
+      <div class="card">
+        <div class="ico">⌚</div>
+        <h3>Apple Watch</h3>
+        <p>不带手机也能记录，手表端独立跑完整个训练，回到手机旁自动同步，跳绳同样支持。</p>
+      </div>
+      <div class="card">
+        <div class="ico">🖼️</div>
+        <h3>分享卡片</h3>
+        <p>把一次训练排成好看的卡片，多套模板可选，还可加水印照片，一键分享到社交平台。</p>
+      </div>
+      <div class="card">
+        <div class="ico">🏅</div>
+        <h3>成就与跑鞋</h3>
+        <p>40 枚成就徽章记录你的里程碑，跑鞋里程自动累计，到里程提醒你该换鞋了。</p>
+      </div>
+      <div class="card">
+        <div class="ico">📥</div>
+        <h3>数据自由</h3>
+        <p>随时全量导出 CSV / JSON / GPX，也能从 Apple 健康或其他 App 导入历史记录，永久免费。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>我们的三条原则</h2>
+    <div class="principles">
+      <div class="principle">
+        <div class="num">1</div>
+        <h3>零广告</h3>
+        <p>不含任何广告、不嵌入广告 SDK，打开就是工具本身，不被打扰。</p>
+      </div>
+      <div class="principle">
+        <div class="num">2</div>
+        <h3>数据可导出</h3>
+        <p>你的运动数据属于你。全量导出永久免费，随时带走、自由备份。</p>
+      </div>
+      <div class="principle">
+        <div class="num">3</div>
+        <h3>付费透明</h3>
+        <p>金额、周期、续费日与取消路径同屏展示，没有隐藏条款，随时可退。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>订阅方案</h2>
+    <p class="lead">基础记录与负荷分析可长期使用；训练计划、节拍器与语音播报等进阶功能由订阅解锁。</p>
+    <div class="plans">
+      <div class="plan">
+        <div class="name">月付</div>
+        <div class="price">¥28<small> / 月</small></div>
+        <div class="note">灵活按月，随时取消</div>
+      </div>
+      <div class="plan feature">
+        <div class="name">季付</div>
+        <div class="price">¥68<small> / 季</small></div>
+        <div class="note">约合 ¥22.7 / 月 · 省 19%</div>
+      </div>
+      <div class="plan">
+        <div class="name">年付</div>
+        <div class="price">¥168<small> / 年</small></div>
+        <div class="note">约 ¥14.0 / 月 · 省 50%</div>
+      </div>
+    </div>
+    <p class="note-line">订阅由 Apple 处理：<strong>确认购买后从 Apple ID 账户扣费</strong>；订阅将在每个周期结束前 24 小时自动续费并扣款，除非您在到期前 24 小时关闭自动续订；购买后可在设备「设置 → Apple ID → 订阅」中管理或取消。年付含 7 天免费试用，未在试用结束前取消将于试用期结束后按 ¥168/年 自动续费；若在试用期内购买订阅，未使用的试用时长将失效。本页面价格仅供参考，实际以 App Store 结算页为准。完整条款见 <a href="terms.html" style="color:var(--brand);">使用条款</a>。</p>
+  </section>
+
+  <section>
+    <h2>立即体验</h2>
+    <p class="lead">在 App Store 搜索「简·运动」，或点击下方按钮前往下载。支持 iPhone 与 Apple Watch。</p>
+    <div class="cta-wrap">
+      <!-- TODO：拿到 App Store 应用 ID 后，把下面的搜索链接换成 https://apps.apple.com/cn/app/idXXXXXXXXXX -->
+      <a class="cta" href="https://apps.apple.com/cn/search?term=%E7%AE%80%C2%B7%E8%BF%90%E5%8A%A8">在 App Store 查看</a>
+    </div>
+    <p class="note-line">当前按钮跳转到 App Store 搜索结果页；应用上架后请把链接替换为真实的应用页面地址。应用下载与购买均通过 Apple 完成。</p>
+  </section>
+</main>
+
+<footer>
+  简·运动 — 跑步训练负荷记录<br>
+  <div class="links">
+    <a href="index.html">产品主页</a> · <a href="support.html">技术支持</a> · <a href="privacy.html">隐私政策</a> · <a href="terms.html">使用条款</a>
+  </div>
+  © 2026 简·运动　保留所有权利<br>
+  软件标识：cn.jianyundong.app<br>
+  <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">粤ICP备2025370411号</a>
+</footer>
+</body>
+</html>
